@@ -4,13 +4,14 @@ import { Component } from '@angular/core';
    selector:'quotes-list',
    template:`
    <h1>QuotesJourney</h1>
-   <hr>
-   <quotes-thumbnail></quotes-thumbnail>
+   <hr/>
+   <quotes-thumbnail> </quotes-thumbnail>
    `
+   // [quote]="quotes"
 })
 
 export class QuotesListComponet{
-   quote={
+   quotes={
       id:1,
       qoutesays: 'Give yourself time',
       author: 'Unknown',

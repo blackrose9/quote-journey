@@ -1,10 +1,10 @@
 import { Component } from '@angular/core'
 
 @Component({
-   selector: 'quote-thumbnail',
+   selector: 'quotes-thumbnail',
    template: `
    <div class="thumbnail">
-      <h3>{{quote.quotesays}}<h3>
+      <h3>{{quote.quotesays}}</h3>
       <p>{{quote.author}}</p>
       <p>{{quote.postedBy}}</p>
       <p>{{quote.votes}} votes</p>
