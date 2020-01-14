@@ -1,0 +1,10 @@
+<div >
+   <ul>
+      <li *ngFor='let quote of quotes' class="thumbnail">
+         <h3>{{quote.quoteSays}}</h3>
+         <p>{{quote.author}}</p>
+         <a (click)='toggleDetails(i)'>ViewDetails</a>
+         <app-quotes-detail *ngIf='quote.showDetails' [quote]="quote"></app-quotes-detail>
+      </li>
+   </ul>
+</div>

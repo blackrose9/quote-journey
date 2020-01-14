@@ -1,20 +1,36 @@
 import { Component } from '@angular/core'
+import { QuoteClass } from "../quote";
 
 @Component({
    selector: 'quotes-thumbnail',
-   template: `
-   <div class="thumbnail">
-      <h3>{{quote.quotesays}}</h3>
-      <p>{{quote.author}}</p>
-      <p>{{quote.postedBy}}</p>
-      <p>{{quote.votes}} votes</p>
-   </div>
-   `
-   // <ul>
-   //    <li *ngFor='let quote of quotes'>{{quote}}</li>
-   // </ul>
+   templateUrl: './quotes-thumbnail.component.html'
 })
 
 export class QuotesThumbnailComponent{
-
+   quotes:QuoteClass[]=[
+      {
+         id: 1, 
+         quoteSays: "Give yourself time", 
+         author: "UnknownAuthor",
+         postedBy: "Sarah",
+         votes: 0,
+         datePosted: "02/02/2020"
+      },
+      {
+         id: 2,
+         quoteSays: "Give yourself space",
+         author: "UnknownAuthor",
+         postedBy: "Sarah",
+         votes: 0,
+         datePosted: "02/02/2020"
+      },
+      {
+         id: 3,
+         quoteSays: "Give yourself freedom",
+         author: "UnknownAuthor",
+         postedBy: "Sarah",
+         votes: 0,
+         datePosted: "02/02/2020"
+      }
+   ];
 }
