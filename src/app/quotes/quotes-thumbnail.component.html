@@ -1,6 +1,6 @@
 <div >
-   <ul>
-      <li *ngFor='let quote of quotes' class="thumbnail">
+   <ul class="container">
+      <li *ngFor='let quote of quotes; let i = index' class="thumbnail">
          <h3>{{quote.quoteSays}}</h3>
          <p>{{quote.author}}</p>
          <a (click)='toggleDetails(i)'>ViewDetails</a>

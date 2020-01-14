@@ -33,4 +33,8 @@ export class QuotesThumbnailComponent{
          datePosted: "02/02/2020"
       }
    ];
+
+   toggleDetails(index){
+      this.quotes[index].showDetails = !this.quotes[index].showDetails;
+    }
 }
