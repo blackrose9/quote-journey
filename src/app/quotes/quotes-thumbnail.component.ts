@@ -37,4 +37,10 @@ export class QuotesThumbnailComponent{
    toggleDetails(index){
       this.quotes[index].showDetails = !this.quotes[index].showDetails;
     }
+
+    deleteQuote(isNope, index){
+      if (isNope) {
+        this.quotes.splice(index,1);
+      }
+    }
 }
