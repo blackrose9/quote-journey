@@ -6,7 +6,7 @@ export class QuoteClass {
    public author: string,
    public postedBy: string,
    public votes: number,
-   public datePosted: string,
+   public datePosted: Date,
    ){
       this.showDetails=false
    }
