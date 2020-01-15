@@ -15,3 +15,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Known Bugs
 * The voting function is not yet available but is a feature that will be implemented soon.
+* gh-pages is not working
+
+### How it looks
+![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/form.PNG)
+![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/form-validation.PNG)
+![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/quotes-list.PNG)
+Altogether now!
+![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/altogether.PNG)
