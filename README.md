@@ -22,4 +22,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/form-validation.PNG)
 ![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/quotes-list.PNG)
 Altogether now!
-![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/altogether.PNG)
+![alt text](https://github.com/blackrose9/quote-journey/blob/master/src/assets/img/altogether.png)
