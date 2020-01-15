@@ -8,30 +8,25 @@ import { QuoteClass } from "../quote";
 
 export class QuotesThumbnailComponent{
    quotes:QuoteClass[]=[
-      // {
-      //    id: 1, 
-      //    quoteSays: "Give yourself time", 
-      //    author: "UnknownAuthor",
-      //    postedBy: "Sarah",
-      //    votes: 0,
-      //    datePosted: "02/02/2020"
-      // },
-      // {
-      //    id: 2,
-      //    quoteSays: "Give yourself space",
-      //    author: "UnknownAuthor",
-      //    postedBy: "Sarah",
-      //    votes: 0,
-      //    datePosted: "02/02/2020"
-      // },
-      // {
-      //    id: 3,
-      //    quoteSays: "Give yourself freedom",
-      //    author: "UnknownAuthor",
-      //    postedBy: "Sarah",
-      //    votes: 0,
-      //    datePosted: "02/02/2020"
-      // }
+      new QuoteClass(1,"Give yourself time", 
+          "UnknownAuthor",
+          "Sarah",
+          0,
+          new Date(2020,3,14)
+      ),
+      new QuoteClass(2,
+          "Give yourself space",
+          "UnknownAuthor",
+          "Sarah",
+          0,
+          new Date(2020,3,14)),
+      new QuoteClass(3,
+          "Give yourself freedom",
+          "UnknownAuthor",
+          "Sarah",
+          0,
+          new Date(2020,3,14))
+
    ];
 
    addNewQuote(quote){
