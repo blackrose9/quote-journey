@@ -4,7 +4,7 @@
    <form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
       <div class="form-group">
          <label for="quote">Quote</label>
-         <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quoteSays" name="quote" #name="ngModel" required></textarea>
+         <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quoteSays" name="quote" #quote="ngModel" required></textarea>
          <!-- Display: {{newQuote.quoteSays}} -->
          <!-- quote validation -->
          <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
@@ -14,7 +14,7 @@
 
       <div class="form-group">
          <label for="author">Author</label>
-         <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #name="ngModel" required>
+         <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
          <!-- Author validation -->
          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
             <p>Author is required</p>
@@ -23,7 +23,7 @@
 
       <div class="form-group">
          <label for="postedBy">Posted By</label>
-         <input type="text" class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #name="ngModel" required>
+         <input type="text" class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel" required>
          <!-- Posted By validation -->
          <div [hidden]="postedBy.valid || postedBy.pristine" class="alert alert-danger">
             <p>Posted By is required</p>
@@ -32,13 +32,13 @@
 
       <div class="form-group">
          <label for="votes">Votes</label>
-         <input type="text" class="form-control" id="votes" [(ngModel)]="newQuote.votes" name="votes" #name="ngModel" required>
+         <input type="text" class="form-control" id="votes" [(ngModel)]="newQuote.votes" name="votes" #votes="ngModel" required>
       </div>
 
       <div class="form-group">
          <label for="datePosted">Date Posted</label>
          <br>
-         <input type='date' id="datePosted" [(ngModel)]="newQuote.datePosted" name="date" #name="ngModel" required>
+         <input type='date' id="datePosted" [(ngModel)]="newQuote.datePosted" name="date" #date="ngModel" required>
          <!-- quote validation -->
          <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
             <p>Date is required</p>
