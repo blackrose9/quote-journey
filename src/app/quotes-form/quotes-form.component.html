@@ -4,25 +4,47 @@
    <form #quoteForm='ngForm'>
       <div class="form-group">
          <label for="quote">Quote</label>
-         <input type="text" required class="form-control" id="name">
+         <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quoteSays" name="quote" #name="ngModel" required></textarea>
+         <!-- Display: {{newQuote.quoteSays}} -->
+         <!-- quote validation -->
+         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Quote is required</p>
+         </div>
       </div>
+
       <div class="form-group">
          <label for="author">Author</label>
-         <textarea class="form-control" id="author" rows="4" required></textarea>
+         <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #name="ngModel" required>
+         <!-- Author validation -->
+         <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+         </div>
       </div>
+
       <div class="form-group">
-         <label for="postedby">Posted By</label>
-         <textarea class="form-control" id="postedby" rows="4" required></textarea>
+         <label for="postedBy">Posted By</label>
+         <input type="text" class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #name="ngModel" required>
+         <!-- Posted By validation -->
+         <div [hidden]="postedBy.valid || postedBy.pristine" class="alert alert-danger">
+            <p>Posted By is required</p>
+         </div>
       </div>
+
       <div class="form-group">
          <label for="votes">Votes</label>
-         <textarea class="form-control" id="votes" rows="4" required></textarea>
+         <input type="text" class="form-control" id="votes" [(ngModel)]="newQuote.votes" name="votes" #name="ngModel" required>
       </div>
+
       <div class="form-group">
          <label for="datePosted">Date Posted</label>
          <br>
-         <input type='date' id="datePosted" required>
+         <input type='date' id="datePosted" [(ngModel)]="newQuote.datePosted" name="date" #name="ngModel" required>
+         <!-- quote validation -->
+         <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+            <p>Date is required</p>
+         </div>
       </div>
+
       <button type="submit" class="btn btn-success">Add Quote</button>
    </form>
 </div>
