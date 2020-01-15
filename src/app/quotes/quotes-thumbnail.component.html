@@ -1,5 +1,5 @@
 <div >
-   <app-quotes-form></app-quotes-form>
+   <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
    <ul class="container">
       <li *ngFor='let quote of quotes; let i = index' class="thumbnail">
          <h3>{{quote.quoteSays}}</h3>
