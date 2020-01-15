@@ -1,27 +1,17 @@
-# Quotes
+# QuotesJourney
+#### By blackrose9
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+### Description
+This is a quotes app. Where you can look at quotes and make new quotes and delete the Quote you do not like. "Just 'nope' it away"
 
-## Development server
-
+## Deployment
+### Online
+Run this link in your browser: https://blackrose9.github.io/quote-journey/
+### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### CodeBeat Grade
+[![codebeat badge](https://codebeat.co/badges/9b11a74a-9b94-442d-b69f-dd61f52d6e5c)](https://codebeat.co/projects/github-com-blackrose9-quote-journey-master)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Known Bugs
+* The voting function is not yet available but is a feature that will be implemented soon.
